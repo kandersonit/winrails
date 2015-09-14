@@ -40,7 +40,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'coffee-script-source', '1.8.0'
 gem 'bootstrap-sass'
 
+group :development, :test do
+    gem 'sqlite3'
+end
 
-
+group :production do
 gem 'pg'
 gem 'rails_12factor'
+end
